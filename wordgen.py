@@ -15,3 +15,5 @@ def loadwords():
 
 if __name__ == '__main__':
     loadwords()
+    for i in range(3,6):
+        genwords(i)
