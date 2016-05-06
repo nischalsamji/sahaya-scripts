@@ -8,8 +8,8 @@ def loadwords():
     wordfile = open("words.txt")
     words = wordfile.readlines()
     for letter in range(len(letters)):
-        letterwords = [word.rstrip('\n') for word in words if word[0] == letters[0] and len(word) == 4]
-        alphabetmap['a'] = letterwords
+        letterwords = [word.rstrip('\n') for word in words if word[0] == letters[letter] and len(word) == 4]
+        alphabetmap[letters[letter]] = letterwords
         worddict[3] = alphabetmap
     print worddict
 if __name__ == '__main__':
